@@ -35,7 +35,7 @@ return(
                 <p className="text-[.875rem] md:text-2xl font-normal">Send gift to your friends, family, colleagues, and anyone else through giftie</p>
               </div>
        
-              <img className="w-[22rem] pl-5 md:pl-10 lg:pl-0 md:ml-16 lg:ml-28" src={gift} alt="" /> 
+              <img className="w-[22rem] pl-5 md:pl-28 lg:pl-0 md:ml-8 lg:ml-28" src={gift} alt="" /> 
             </div>
           </div>  
       </div> 
@@ -66,7 +66,7 @@ return(
                   <p className="text-[.875rem] md:text-2xl font-normal">Create event tickets and sell on giftie. You can search giftie for event tickets and grab yours</p>
                </div>
 
-               <img className="w-[16.382rem] pl-10 md:pl-0 md:ml-40 lg:ml-52 h-[194px] md:h-auto" src={iPhone} alt="" />  
+               <img className="w-[14rem] pl-10 md:pl-0 md:ml-40 lg:ml-52" src={iPhone} alt="" />  
           
             </div>
           </div>

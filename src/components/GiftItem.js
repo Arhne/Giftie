@@ -10,7 +10,7 @@ function GiftItem(props) {
               <div className="bg-[#5451B8] rounded-[50%] w-[50px] mb-6 h-[50px] flex justify-center items-center mx-auto">
                 <img src= {props.figure} alt="" />
               </div>
-              <figcaption>{props.desc}</figcaption>
+              <figcaption className="text-[#181747] font-bold">{props.desc}</figcaption>
             </figure>
          </div>
 

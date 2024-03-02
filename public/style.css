@@ -46,41 +46,86 @@
 .flow>*+* {
     margin-top: 1em;
 }
+/*faqs*/
+.FAQs{
+    display: grid;
+    grid-auto-flow: column;
+    align-items:center;
+    justify-content: space-between; 
+}
 
-@media (max-width: 50em){
 
-    .footer-logo {
-        grid-area: logo;
-    } 
-    
-    .footer-form {
-        grid-area: form;
-    }
-    
-    .footer-list {
-        grid-area: list;
-    }
+/*footer*/
+/* input:where([type="email"]) {
+width: max(100%, 14rem);
+} */
 
-    .footer-copyright {
-        grid-area: copyright;
-    }
+.footer-logo {
+    grid-area: logo;
+    margin-inline: auto;
+} 
 
-    .footer-social {
-        grid-area: social;
-    }
+.footer-form {
+    grid-area: form;
+    margin-bottom: 20px;
+}
+
+.footer-list {
+    grid-area: list;
+}
+
+.footer-copyright {
+    grid-area: copyright;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer-social {
+    grid-area: social;
+    margin-inline: auto;
+    margin-block: 40px;
+}
+
+.footer-wrap {
+    display: grid;
+    justify-content: center;
+    column-gap: 4rem;
+    grid-template-areas:
+        "form"
+        "list"
+        "social"
+        "logo"
+        "copyright";
+}
+
+
+@media (min-width: 43.375em){
+.footer-logo{
+    margin-inline: 0;
+}
+
+.footer-form {
+    margin-bottom: 0;
+}
+
+.footer-copyright {
+    margin-top: 0;
+    text-align: left;
+}
+
+.footer-social {
+    margin-inline: 0;
+    margin-block: 0;
+}
 
     .footer-wrap {
-        display: grid;
-        
         grid-template-areas:
-            "form"
-            "logo"
-            "list"
-            "social"
-           
-            "copyright";
-    }
-       
+            
+            "logo list form "
+            "copyright list form"
+            "social list form";
+            
+    }       
 }
 
 
